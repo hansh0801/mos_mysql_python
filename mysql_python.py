@@ -52,3 +52,4 @@ while True:
     client.disconnect() #disconnect # 메세지를 수신 한 후 토픽 구독 취소
     client.loop_stop() #stop loop
     time.sleep(60)  #기다리는 시간임 얼마나 기다릴지 초로 정하면 됨
+#git test
