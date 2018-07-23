@@ -4,10 +4,17 @@ import paho.mqtt.client as paho
 import json
 import pymysql
 
+<<<<<<< HEAD
 broker="broker server" #우리 서버 브로커 ip
 recvData = "" # 받는 데이터 없게 초기화
 conn = pymysql.connect(host='localhost', user='userid', password='passwd',
                        db='db', charset='utf8') #mysql 에 연결
+=======
+broker="server ip" #우리 서버 브로커 ip
+recvData = "" # 받는 데이터 없게 초기화
+conn = pymysql.connect(host='localhost', user='root', password='password',
+                       db='Sensor1', charset='utf8') #mysql 에 연결
+>>>>>>> 9fc9c6d19b25b84f73e79602ed8d4031acac5aa4
 curs = conn.cursor()
 fetch_curs = conn.cursor(pymysql.cursors.DictCursor) #dick형으로 fetch 하기위한 새로운 커서
 def fetch_sensors(): # 센서 데이터 목록을 불러옴
