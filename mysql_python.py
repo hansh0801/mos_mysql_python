@@ -6,7 +6,7 @@ import pymysql
 
 
 
-broker="server ip" #우리 서버 브로커 ip
+broker="aws server ip" #우리 서버 브로커 ip
 recvData = "" # 받는 데이터 없게 초기화
 conn = pymysql.connect(host='localhost', user='root', password='password',
                        db='Sensor1', charset='utf8') #mysql 에 연결
