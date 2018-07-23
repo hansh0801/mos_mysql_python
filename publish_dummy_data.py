@@ -1,9 +1,9 @@
 import paho.mqtt.client as paho
 import time
-broker="192.168.0.55"
+broker="18.182.191.244"
 msg =[]
 
-for i in range(1,100):
+for i in range(1,200):
     temp = "test"
     temp=temp+str(i)
     msg.append(temp)
@@ -21,6 +21,6 @@ while True:
     client1.publish(msg[i],"test for rasp")
     print(msg[i])
     i+=1
-    if i == 99:
+    if i == 199:
         i = 0
     time.sleep(0.001)     #publish
