@@ -4,9 +4,9 @@ import paho.mqtt.client as paho
 import json
 import pymysql
 
-broker="192.168.0.55" #우리 서버 브로커 ip
+broker="server ip" #우리 서버 브로커 ip
 recvData = "" # 받는 데이터 없게 초기화
-conn = pymysql.connect(host='localhost', user='root', password='raspberry',
+conn = pymysql.connect(host='localhost', user='root', password='password',
                        db='Sensor1', charset='utf8') #mysql 에 연결
 curs = conn.cursor()
 
